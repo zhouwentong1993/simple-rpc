@@ -6,8 +6,17 @@
 
     <groupId>com.wentong</groupId>
     <artifactId>simple-rpc</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <description>简单的 rpc 框架</description>
+    <modules>
+        <module>client</module>
+        <module>hello-service-api</module>
+        <module>rpc-api</module>
+        <module>rpc-server</module>
+        <module>rpc-netty</module>
+        <module>server</module>
+    </modules>
 
 
 </project>
