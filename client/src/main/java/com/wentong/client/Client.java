@@ -15,6 +15,5 @@ public class Client {
         URI uri = nameService.lookUpService("");
         HelloService remoteService = rpcAccessPoint.getRemoteService(uri, HelloService.class);
         remoteService.sayHello("xiaoming");
-
     }
 }
