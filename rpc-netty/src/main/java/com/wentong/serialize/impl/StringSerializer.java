@@ -9,7 +9,6 @@ import static com.wentong.serialize.SerializerType.STRING_TYPE;
 
 public class StringSerializer implements Serializer<String> {
 
-
     @Override
     public byte getType() {
         return STRING_TYPE;
@@ -39,4 +38,5 @@ public class StringSerializer implements Serializer<String> {
     public Class<String> getSerializedClass() {
         return String.class;
     }
+
 }
