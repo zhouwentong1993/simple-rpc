@@ -6,6 +6,9 @@ import java.io.Closeable;
 import java.util.Map;
 import java.util.concurrent.*;
 
+/**
+ * 正在进行中的请求，因为整体框架是异步的，所以需要一个中间连接
+ */
 public class InFlightRequests implements Closeable {
 
     private static final int TIMEOUT = 10;

@@ -7,7 +7,7 @@ import lombok.Data;
  */
 @Data
 public class Header {
-    private int uniqueId;
+    private int requestId;
     private int version;
     private int type;
 
