@@ -40,6 +40,8 @@ public class ResponseInvocation extends SimpleChannelInboundHandler<Command> {
         logger.warn("Exception: ", cause);
         super.exceptionCaught(ctx, cause);
         Channel channel = ctx.channel();
-        if(channel.isActive())ctx.close();
+        if(channel.isActive()) {
+            ctx.close();
+        }
     }
 }
