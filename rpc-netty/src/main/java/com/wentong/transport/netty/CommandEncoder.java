@@ -25,7 +25,7 @@ public abstract class CommandEncoder extends MessageToByteEncoder {
 
     }
 
-    protected void encodeHeader(ChannelHandlerContext channelHandlerContext, Header header, ByteBuf byteBuf) {
+    protected void encodeHeader(ChannelHandlerContext channelHandlerContext, Header header, ByteBuf byteBuf) throws Exception {
         byteBuf.writeInt(header.getType());
         byteBuf.writeInt(header.getVersion());
         byteBuf.writeInt(header.getRequestId());
